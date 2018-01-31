@@ -86,7 +86,7 @@ if __name__ == '__main__':
         tmp.write(m_pipe.read())
         m_pipe.close()
 
-        # execute gzip
+        #  execute gzip
         arguments = []
         outfile =database + '_' + datetime.now().strftime('%Y%m%d_%H%M%S') +'.sql.gz'
         arguments.append(gzip_path)
